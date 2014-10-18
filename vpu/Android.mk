@@ -17,7 +17,7 @@ LOCAL_CFLAGS += -DBUILD_FOR_ANDROID -D$(BOARD_SOC_TYPE)
 endif
 ifeq ($(USE_GPU_ALLOCATOR), true)
 LOCAL_CFLAGS += -DUSE_GPU=1
-LOCAL_C_INCLUDES += device/fsl-proprietary/include
+LOCAL_C_INCLUDES += device/fsl/imx6-common/include
 LOCAL_SHARED_LIBRARIES := libutils libc liblog libg2d
 else
 ifeq ($(USE_ION_ALLOCATOR), true)
